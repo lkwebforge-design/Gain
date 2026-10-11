@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#F5F0E7">
+<meta name="description" content="Explore GAIN product details, choose your size and add your next essential to your bag.">
+<title>Product Details — GAIN®</title>
+<style>
+:root{--bg:#F5F0E7;--panel:#E8DFD2;--ink:#242321;--muted:#766F66;--accent:#B99A73;--line:rgba(36,35,33,.16);--pad:clamp(18px,4vw,64px);--ease:cubic-bezier(.2,.75,.2,1)}
+*{box-sizing:border-box}html{background:var(--bg);scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;text-transform:uppercase;letter-spacing:.12em;font-size:10px}.muted{color:var(--muted)}
+.header{height:76px;padding:0 var(--pad);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:10px;font-size:25px;font-weight:950;letter-spacing:-.08em}.mark{width:28px;height:28px;border:1px solid var(--accent);color:var(--accent);display:grid;place-items:center;font-size:17px}.header-right{display:flex;gap:20px;align-items:center}.header-link,.bag{border:0;background:none;color:var(--ink);font-size:10px;letter-spacing:.12em;text-transform:uppercase}.bag span{color:var(--accent)}
+main{max-width:1500px;margin:auto;padding:28px var(--pad) 90px}.crumb{display:flex;gap:10px;align-items:center;color:var(--muted);margin-bottom:28px}.crumb a:hover{color:var(--accent)}.product-layout{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(320px,.92fr);gap:clamp(28px,6vw,90px);align-items:start}.gallery{min-width:0}.main-image{background:var(--panel);aspect-ratio:4/5;overflow:hidden;position:relative}.main-image img{width:100%;height:100%;object-fit:cover;display:block}.image-stamp{position:absolute;left:16px;top:16px;background:var(--accent);color:var(--ink);padding:9px 11px}.gallery-note{display:flex;justify-content:space-between;gap:12px;padding:12px 0;color:var(--muted)}.details{position:sticky;top:25px;padding:10px 0}.overline{color:var(--accent);margin-bottom:18px}.details h1{font-size:clamp(38px,5.4vw,76px);line-height:.9;letter-spacing:-.075em;text-transform:uppercase;margin:0 0 20px}.price{font-size:24px;font-weight:700;letter-spacing:-.04em}.tax-note{font-size:11px;color:var(--muted);margin-top:7px}.rule{height:1px;background:var(--line);margin:25px 0}.description{font-size:13px;line-height:1.8;color:#5F5A52;max-width:470px}.label-row{display:flex;align-items:center;justify-content:space-between;gap:15px;margin:25px 0 12px}.size-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.size{height:48px;border:1px solid var(--line);background:transparent;color:var(--ink);transition:background .2s,border-color .2s}.size:hover,.size.selected{border-color:var(--ink);background:var(--ink);color:var(--bg)}.size-help{color:var(--muted);font-size:10px;text-decoration:underline;text-underline-offset:3px}.actions{display:grid;grid-template-columns:1fr;gap:10px;margin-top:25px}.btn{min-height:54px;padding:0 20px;display:flex;align-items:center;justify-content:center;gap:15px;border:1px solid var(--ink);background:transparent;color:var(--ink);font-size:10px;letter-spacing:.13em;text-transform:uppercase;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-2px)}.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--ink);font-weight:800}.feedback{min-height:18px;margin-top:10px;color:var(--muted);font-size:11px}.service-list{display:grid;gap:14px}.service{display:flex;gap:12px;align-items:flex-start;font-size:11px;line-height:1.6;color:#5F5A52}.service-icon{width:28px;height:28px;border:1px solid var(--line);display:grid;place-items:center;flex-shrink:0;color:var(--accent)}
+.below{margin-top:100px;border-top:1px solid var(--line);padding-top:35px}.below h2{font-size:clamp(28px,4vw,48px);letter-spacing:-.07em;text-transform:uppercase;margin:0 0 20px}.related{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.related-card{min-width:0}.related-card img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;background:var(--panel);transition:transform .4s}.related-image{overflow:hidden;background:var(--panel)}.related-card:hover img{transform:scale(1.035)}.related-info{display:flex;justify-content:space-between;gap:10px;padding-top:12px;font-size:11px}.related-info strong{text-transform:uppercase}.footer{border-top:1px solid var(--line);padding:25px var(--pad);display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:var(--muted)}.notice{position:fixed;left:50%;bottom:20px;z-index:10;transform:translate(-50%,15px);background:var(--ink);color:var(--bg);padding:14px 18px;font-size:11px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;max-width:calc(100% - 30px)}.notice.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:800px){.product-layout{grid-template-columns:1fr;gap:25px}.details{position:static;padding-top:0}.main-image{aspect-ratio:4/4.7}.details h1{font-size:clamp(42px,10vw,70px)}.below{margin-top:65px}.related{grid-template-columns:repeat(2,minmax(0,1fr))}.related-card:last-child{display:none}}
+@media(max-width:520px){.header{height:65px}.header-right{gap:12px}.header-link{display:none}main{padding-top:20px}.crumb{margin-bottom:18px}.product-layout{gap:20px}.main-image{aspect-ratio:4/4.8}.price{font-size:22px}.rule{margin:20px 0}.related-info{flex-direction:column;gap:6px}.gallery-note{font-size:9px}}
+</style>
+</head>
+<body>
+<header class="header"><a class="brand" href="index.html" aria-label="GAIN home"><span class="mark">G</span><span>GAIN<span style="color:var(--accent)">®</span></span></a><div class="header-right"><a class="header-link" href="index.html#shop">Continue shopping ↗</a><a class="bag" href="index.html?bag=1">Bag <span id="bagCount">[0]</span></a></div></header>
+<main>
+<nav class="crumb mono" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><a href="index.html#shop">Shop</a><span>/</span><span id="crumbName">Product</span></nav>
+<section class="product-layout" id="product">
+<div class="gallery"><div class="main-image"><img id="productImage" src="" alt=""><span class="image-stamp mono" id="productTag">GAIN / CORE</span></div><div class="gallery-note mono"><span>Product ID / <span id="productCode">GN-001</span></span><span>Made to move.</span></div></div>
+<div class="details"><div class="overline mono" id="productCategory">Collection / Streetwear</div><h1 id="productName">Core Oversized Tee</h1><div class="price" id="productPrice">LKR 4,900</div><div class="tax-note">Launch price shown in Sri Lankan rupees.</div><div class="rule"></div><p class="description" id="productDescription">A considered everyday essential with a relaxed silhouette. Designed to move from training days to off-duty hours.</p>
+<div class="label-row"><span class="mono">Choose your size</span><span class="size-help" id="sizeGuide">Size guide: S–XL</span></div><div class="size-grid" id="sizeGrid" role="group" aria-label="Choose product size"></div>
+<div class="actions"><button class="btn primary" id="addButton">Add to bag <span>↗</span></button><a class="btn" href="index.html?bag=1">View bag <span>→</span></a></div><p class="feedback" id="feedback" role="status">Select a size, then add this piece to your bag.</p>
+<div class="rule"></div><div class="service-list"><div class="service"><span class="service-icon">✓</span><span><strong>Order with confidence</strong><br>Stock and final availability are confirmed by GAIN before an order is accepted.</span></div><div class="service"><span class="service-icon">↗</span><span><strong>Delivery details</strong><br>Delivery fee and payment options will be confirmed directly with you.</span></div><div class="service"><span class="service-icon">G</span><span><strong>The GAIN code</strong><br>Train to gain. Dress to dominate.</span></div></div>
+</div>
+</section>
+<section class="below"><div class="mono overline">You may also like / More from GAIN</div><h2>Keep your rotation moving.</h2><div class="related" id="related"></div></section>
+</main>
+<footer class="footer mono"><span>© <span id="year"></span> GAIN®</span><a href="index.html">Back to home ↑</a><span>Sri Lanka / LKR</span></footer><div class="notice" id="notice" role="status"></div>
+<script>
+(function(){
+'use strict';
+const images=[
+'https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=900&q=85',
+'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=900&q=85',
+'https://images.unsplash.com/photo-1506629905607-d9f7f5b7e8a3?auto=format&fit=crop&w=900&q=85',
+'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=85',
+'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=85',
+'https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=900&q=85',
+'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=85',
+'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=85'
+];
+const products=[
+{id:'GN-001',name:'Core Oversized Tee',category:'streetwear',price:4900,image:images[0],tag:'CORE',sizes:['S','M','L','XL'],description:'A considered everyday essential with a relaxed silhouette. Designed to move from training days to off-duty hours.'},
+{id:'GN-002',name:'Heavyweight Hoodie',category:'streetwear',price:8900,image:images[1],tag:'ESSENTIAL',sizes:['S','M','L','XL'],description:'A substantial layer for cooler starts and late finishes. An easy streetwear staple with a confident, relaxed fit.'},
+{id:'GN-003',name:'Performance Training Tee',category:'gym wear',price:4200,image:images[2],tag:'TRAINING',sizes:['S','M','L','XL'],description:'A training-focused essential for warm-ups, hard sessions and everything that happens after the work is done.'},
+{id:'GN-004',name:'Utility Training Jacket',category:'gym wear',price:10500,image:images[3],tag:'PERFORMANCE',sizes:['S','M','L','XL'],description:'A utility-inspired outer layer built around movement, function and a clean athletic profile.'},
+{id:'GN-005',name:'Signature Relaxed Shirt',category:'luxury',price:7600,image:images[4],tag:'SIGNATURE',sizes:['S','M','L','XL'],description:'Clean lines and a relaxed silhouette make this a versatile piece for considered everyday dressing.'},
+{id:'GN-006',name:'Premium Everyday Layer',category:'luxury',price:6900,image:images[5],tag:'LIMITED',sizes:['S','M','L','XL'],description:'A refined layering piece with a minimal look, made to slot effortlessly into your everyday rotation.'},
+{id:'GN-007',name:'Form Track Pants',category:'gym wear',price:7200,image:images[6],tag:'MOVEMENT',sizes:['S','M','L','XL'],description:'An easy-moving track silhouette for warm-ups, recovery and everyday comfort.'},
+{id:'GN-008',name:'After Hours Overshirt',category:'streetwear',price:9800,image:images[7],tag:'AFTER HOURS',sizes:['S','M','L','XL'],description:'A versatile overshirt that brings a structured finish to laid-back, off-duty outfits.'}
+];
+const params=new URLSearchParams(location.search),id=params.get('id'),product=products.find(p=>p.id===id)||products[0];let selectedSize='';
+const $=s=>document.querySelector(s),money=n=>'LKR '+Number(n).toLocaleString('en-LK');
+function cartRead(){try{const c=JSON.parse(localStorage.getItem('gain-cart-v1')||'[]');return Array.isArray(c)?c:[]}catch(e){return[]}}
+function cartWrite(c){try{localStorage.setItem('gain-cart-v1',JSON.stringify(c))}catch(e){}}
+function renderCount(){$('#bagCount').textContent='['+cartRead().reduce((n,x)=>n+(Number(x.qty)||0),0)+']'}
+function notice(t){const n=$('#notice');n.textContent=t;n.classList.add('show');clearTimeout(notice.timer);notice.timer=setTimeout(()=>n.classList.remove('show'),2600)}
+function categoryLabel(s){return s.replace(/\b\w/g,c=>c.toUpperCase())}
+document.title=product.name+' — GAIN®';
+$('#crumbName').textContent=product.name;$('#productImage').src=product.image;$('#productImage').alt=product.name;$('#productTag').textContent=product.tag;$('#productCode').textContent=product.id;$('#productCategory').textContent='Collection / '+categoryLabel(product.category);$('#productName').textContent=product.name;$('#productPrice').textContent=money(product.price);$('#productDescription').textContent=product.description;
+$('#sizeGrid').innerHTML=product.sizes.map(s=>'<button class="size" type="button" data-size="'+s+'" aria-pressed="false">'+s+'</button>').join('');
+$('#sizeGrid').addEventListener('click',e=>{const b=e.target.closest('[data-size]');if(!b)return;selectedSize=b.dataset.size;document.querySelectorAll('.size').forEach(x=>{const on=x===b;x.classList.toggle('selected',on);x.setAttribute('aria-pressed',String(on))});$('#feedback').textContent='Selected size: '+selectedSize;});
+$('#addButton').addEventListener('click',()=>{if(!selectedSize){$('#feedback').textContent='Please choose your size first.';notice('Choose a size before adding to your bag.');return}const cart=cartRead();const existing=cart.find(x=>x.id===product.id&&x.size===selectedSize);if(existing)existing.qty=(Number(existing.qty)||0)+1;else cart.push({id:product.id,size:selectedSize,qty:1});cartWrite(cart);renderCount();$('#feedback').textContent=product.name+' / '+selectedSize+' added to your bag.';notice('Added to bag — '+product.name);});
+const related=products.filter(p=>p.id!==product.id).slice(0,3);
+$('#related').innerHTML=related.map(p=>'<a class="related-card" href="product.html?id='+encodeURIComponent(p.id)+'"><div class="related-image"><img loading="lazy" src="'+p.image+'" alt="'+p.name+'"></div><div class="related-info"><strong>'+p.name+'</strong><span>'+money(p.price)+'</span></div></a>').join('');
+$('#year').textContent=new Date().getFullYear();renderCount();
+})();
+</script>
+</body>
+</html>
