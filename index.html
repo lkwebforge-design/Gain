@@ -144,6 +144,45 @@ html,body{background:#11110f;color:#f1efdf}
  .product-image{border-radius:10px}
 }
 
+
+/* Unified Lume-style glass controls — apply across the whole GAIN storefront */
+button,.btn,a.gl-btn,input[type="button"],input[type="submit"]{
+  border:1px solid rgba(241,239,223,.24)!important;
+  border-radius:999px!important;
+  background:rgba(255,255,255,.075)!important;
+  color:#f1efdf!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.09),0 5px 18px rgba(0,0,0,.08);
+  -webkit-backdrop-filter:blur(16px) saturate(135%)!important;
+  backdrop-filter:blur(16px) saturate(135%)!important;
+  transition:background .22s ease,border-color .22s ease,box-shadow .22s ease,transform .22s ease,color .22s ease!important;
+}
+button:hover,.btn:hover,a.gl-btn:hover,input[type="button"]:hover,input[type="submit"]:hover{
+  background:rgba(255,255,255,.16)!important;
+  border-color:rgba(241,239,223,.48)!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 8px 24px rgba(0,0,0,.16);
+}
+button:active,.btn:active,a.gl-btn:active,input[type="button"]:active,input[type="submit"]:active{transform:translateY(1px)}
+.btn.primary,.filter.active,.size-select button.selected,.gain-lume .gl-btn--cream{
+  background:rgba(232,237,201,.19)!important;
+  border-color:rgba(232,237,201,.52)!important;
+  color:#f1efdf!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.17),0 5px 20px rgba(0,0,0,.1);
+}
+.btn.primary:hover,.filter.active:hover,.size-select button.selected:hover,.gain-lume .gl-btn--cream:hover{
+  background:rgba(232,237,201,.29)!important;
+  border-color:rgba(232,237,201,.7)!important;
+}
+.filter,.size-select button,.qty button,.close-btn,.menu-btn,.text-btn,.cart-btn{
+  background:rgba(255,255,255,.055)!important;
+}
+.product-tag{border:1px solid rgba(241,239,223,.18);border-radius:999px!important;background:rgba(17,17,15,.55)!important;color:#f1efdf!important;backdrop-filter:blur(14px)}
+.quick-add{background:rgba(17,17,15,.56)!important;border-color:rgba(241,239,223,.28)!important;color:#f1efdf!important;backdrop-filter:blur(18px)!important}
+.media-play{border-radius:50%!important;background:rgba(17,17,15,.48)!important}
+.gain-lume .gl-btn--glass{background:rgba(255,255,255,.17)!important;border:1px solid rgba(255,255,255,.2)!important;color:#fff!important}
+.gain-lume .gl-btn--cream{background:rgba(232,237,201,.2)!important;color:#fff!important;border:1px solid rgba(232,237,201,.48)!important}
+button:focus-visible,.btn:focus-visible,a.gl-btn:focus-visible{outline:2px solid #e8edc9;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){button,.btn,a.gl-btn{transition:none!important}}
+
 </style>
 </head>
 <body>
