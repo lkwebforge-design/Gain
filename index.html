@@ -74,6 +74,76 @@
 @media(max-width:700px){.hero-campaign-video{object-position:56% center;opacity:.43}.hero-video-wash{background:linear-gradient(90deg,rgba(245,240,231,.82),rgba(245,240,231,.58)),linear-gradient(0deg,rgba(245,240,231,.74),rgba(245,240,231,.08) 70%)}}
 @media(prefers-reduced-motion:reduce){.hero-campaign-video{display:none!important}}
 
+
+/* GAIN global Lume-inspired art direction: cinematic, editorial, warm-ivory glass */
+:root{--bg:#11110f;--panel:#1c1c18;--ink:#f1efdf;--muted:#aaa99a;--acid:#e8edc9;--line:rgba(241,239,223,.16);color-scheme:dark}
+html,body{background:#11110f;color:#f1efdf}
+::selection{background:#e8edc9;color:#11110f}
+.site-header{background:linear-gradient(180deg,rgba(17,17,15,.78),rgba(17,17,15,.08));border-bottom-color:rgba(241,239,223,.12);backdrop-filter:blur(3px)}
+.brand-mark{border-color:#e8edc9;color:#e8edc9}
+.nav a,.text-btn,.cart-btn{color:#f1efdf}
+.nav a:hover{color:#e8edc9}
+.hero{background:#11110f}
+.hero-bg{background:#11110f}
+.starfield{opacity:.18}
+.planet{opacity:.26;mix-blend-mode:screen}
+.portal-ring{opacity:.28}
+.hero-campaign-video{z-index:-2;opacity:.78;filter:saturate(.78) contrast(1.08) brightness(.72);object-position:center 40%}
+.hero-video-wash{background:linear-gradient(90deg,rgba(17,17,15,.77) 0%,rgba(17,17,15,.46) 46%,rgba(17,17,15,.12) 100%),linear-gradient(0deg,rgba(17,17,15,.86),rgba(17,17,15,.06) 65%)}
+.hero .eyebrow,.kicker,.hero .eyebrow:before{color:#e8edc9}
+.hero .eyebrow:before{background:#e8edc9}
+.hero h1{font-family:"Instrument Serif",Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.055em;line-height:.82}
+.hero h1 .outline{-webkit-text-stroke:1px #f1efdf;color:transparent}
+.hero-copy,.section-intro,.portal-card p,.manifesto p{color:#c0bfb2}
+.hero-index,.scroll-hint{color:#d2d1c3}
+.scroll-line{background:#e8edc9}
+.btn{border-color:rgba(241,239,223,.25);color:#f1efdf;border-radius:999px}
+.btn.primary{background:#e8edc9;border-color:#e8edc9;color:#171712}
+.btn.primary:hover{background:#f5f7dc;border-color:#f5f7dc}
+.section{color:#f1efdf}
+.section h2,.portal-card h3{font-family:"Instrument Serif",Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.045em;line-height:.91}
+.portal-card{background:#20201b;border-color:rgba(241,239,223,.14);border-radius:22px}
+.portal-card .portal-visual{background:linear-gradient(120deg,rgba(17,17,15,.1),rgba(17,17,15,.72)),radial-gradient(ellipse at 70% 45%,#9a9d76 0%,#38392e 26%,#11110f 70%)}
+.portal-card .portal-orb{background:radial-gradient(circle at 34% 28%,#e8edc9,#9da17d 12%,#444638 42%,#11110f 70%);box-shadow:inset -50px -30px 90px #000}
+.portal-card .portal-orb:after{border-color:rgba(232,237,201,.35)}
+.shop-toolbar .filter{border-color:rgba(241,239,223,.2);color:#c0bfb2;border-radius:999px}
+.shop-toolbar .filter.active,.shop-toolbar .filter:hover{background:#e8edc9;color:#171712;border-color:#e8edc9}
+.shop-tools input,.shop-tools select{background:#1c1c18;border:1px solid rgba(241,239,223,.18);color:#f1efdf;border-radius:999px}
+.product-image{background:#20201b;border-color:rgba(241,239,223,.1);border-radius:14px;overflow:hidden}
+.product-image img{filter:saturate(.82)}
+.product-tag{background:#e8edc9;color:#171712;border-radius:999px}
+.quick-add{background:rgba(241,239,223,.92);color:#171712;border:0;border-radius:999px;backdrop-filter:blur(12px)}
+.product-name,.product-price{color:#f1efdf}
+.product-type{color:#aaa99a}
+.manifesto{border-color:rgba(241,239,223,.16);background:radial-gradient(ellipse at center,rgba(83,86,63,.2),transparent 68%)}
+.manifesto .big-word{color:#e8edc9;font-family:"Instrument Serif",Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.055em}
+.media-tile{background:#1b1b17;border-color:rgba(241,239,223,.14);border-radius:16px;overflow:hidden}
+.media-frame{background:#20201b}
+.media-play{border-color:rgba(232,237,201,.65);background:rgba(17,17,15,.52);color:#e8edc9}
+.media-caption strong{color:#f1efdf}
+.footer{border-top-color:rgba(241,239,223,.16);background:#11110f}
+.footer-slogan{font-family:"Instrument Serif",Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.045em}
+.footer-links,.footer-bottom{color:#aaa99a}
+.cart-drawer{background:#171714;color:#f1efdf;border-left-color:rgba(241,239,223,.15)}
+.cart-head,.cart-row,.cart-total{border-color:rgba(241,239,223,.15)}
+.close-btn,.qty button,.size-select button{color:#f1efdf;border-color:rgba(241,239,223,.2)}
+.cart-row .small,.cart-note,.order-method-hint{color:#aaa99a}
+.cart-row img{background:#20201b}
+.copy-order-btn{border-color:#e8edc9;color:#e8edc9}
+.overlay{background:rgba(0,0,0,.72)}
+.notice{background:#e8edc9;color:#11110f;border-radius:999px}
+.preloader{background:#11110f;color:#f1efdf}
+.loader-mark span{color:#e8edc9}
+.loader-bottom{color:#aaa99a}
+.loader-bar{background:#34352b}.loader-bar span{background:#e8edc9}
+@media(max-width:620px){
+ .site-header{background:rgba(17,17,15,.78);backdrop-filter:blur(14px)}
+ .nav{background:rgba(17,17,15,.97);border-bottom-color:rgba(241,239,223,.15)}
+ .hero h1{font-size:clamp(66px,16vw,105px)}
+ .portal-card{border-radius:16px}
+ .product-image{border-radius:10px}
+}
+
 </style>
 </head>
 <body>
