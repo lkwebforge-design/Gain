@@ -67,6 +67,13 @@
 @media(max-width:900px){.nav{gap:14px}.nav a{font-size:9px}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.product-image{aspect-ratio:4/5}.quick-add{transform:none;bottom:8px;left:8px;right:8px;padding:10px}.hero{padding-bottom:90px}.planet{width:95vw;right:-30%;top:14%}.portal-ring{width:85vw;right:-17%;top:22%}.hero-index{display:none}.media-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:620px){.site-header{height:65px}.nav{display:none;position:absolute;top:64px;left:0;right:0;background:#F5F0E7f5;border-bottom:1px solid var(--line);padding:22px var(--pad);flex-direction:column;align-items:flex-start}.nav.open{display:flex}.nav a{font-size:12px}.menu-btn{display:block}.header-actions{gap:12px}.hero{min-height:94svh;padding-top:115px;padding-bottom:72px}.hero h1{font-size:clamp(62px,16.2vw,105px)}.hero-bottom{align-items:flex-start;flex-direction:column;margin-top:28px}.hero-copy{font-size:12px}.section{padding-top:68px;padding-bottom:68px}.section-head{align-items:flex-start;flex-direction:column}.section-intro{max-width:340px}.portal-section{padding-top:0}.portal-card{min-height:490px;padding:24px}.portal-card .portal-orb{width:100%;right:-30%;top:-4%}.portal-card h3{font-size:52px}.shop-toolbar{align-items:flex-start}.shop-tools{width:100%}.shop-tools input{flex:1;min-width:0}.shop-tools select{min-width:105px}.product-grid{gap:18px 9px}.product-info{flex-direction:column;gap:8px;padding-top:10px}.product-price{font-size:12px}.media-grid{grid-template-columns:1fr}.media-frame{aspect-ratio:16/10}.footer-top{flex-direction:column}.footer-links{gap:15px}.scroll-hint{bottom:18px}.manifesto .big-word{font-size:18vw}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+
+/* GAIN hero cinematic streetwear video layer — existing portal animation remains underneath */
+.hero-campaign-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%;z-index:-2;opacity:.52;filter:saturate(.72) contrast(1.06);pointer-events:none}
+.hero-video-wash{position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,rgba(245,240,231,.88) 0%,rgba(245,240,231,.69) 45%,rgba(245,240,231,.38) 100%),linear-gradient(0deg,rgba(245,240,231,.62),rgba(245,240,231,.08) 65%)}
+@media(max-width:700px){.hero-campaign-video{object-position:56% center;opacity:.43}.hero-video-wash{background:linear-gradient(90deg,rgba(245,240,231,.82),rgba(245,240,231,.58)),linear-gradient(0deg,rgba(245,240,231,.74),rgba(245,240,231,.08) 70%)}}
+@media(prefers-reduced-motion:reduce){.hero-campaign-video{display:none!important}}
+
 </style>
 </head>
 <body>
@@ -83,6 +90,10 @@
 <main id="top">
 <section class="hero" id="hero">
   <div class="hero-bg" aria-hidden="true"><div class="starfield"></div><div class="planet" id="heroPlanet"></div><div class="portal-ring"></div><div class="hero-grid"></div></div>
+  <video class="hero-campaign-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true" poster="https://images.pexels.com/videos/30843747/urban-street-style-with-moody-cinematic-vibes-30843747.jpeg">
+    <source src="https://videos.pexels.com/video-files/30843747/13190374_3840_2160_24fps.mp4" type="video/mp4">
+  </video>
+  <div class="hero-video-wash" aria-hidden="true"></div>
   <div class="hero-content">
     <div class="eyebrow mono">Beyond the ordinary / Est. 2026</div>
     <h1><span>Train to</span><span class="outline">GAIN.</span><span>Dress to</span><span>DOMINATE<span style="color:var(--acid)">.</span></span></h1>
